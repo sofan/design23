@@ -4,7 +4,7 @@ Description: This is the report page.
 
 ---
 
-Report
+Rapport
 ==========================
 
 * [kmom01](report/kmom01)

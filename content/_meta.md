@@ -1,11 +1,11 @@
 ---
-Logo: image/me.png
+Logo: image/logo.png
 Tagline: Min rapportsida.
 Social:
-    - title: Link till sofan github repo
-      url: https://github.com/sofan/exmample-repo
+    - title: Länk till github repo
+      url: https://github.com/sofan/design23
       icon: github
-    - title: Link till course site
+    - title: Länk till kurssidan
       url: https://dbwebb.se/kurser/design-v3
       icon: leaf
 ---

@@ -22,7 +22,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(214, 233, 250);
+    background-color: white;
 }
 
 .main {
@@ -39,11 +39,16 @@ body {
 
 .main a:hover {
     color: darkcyan;
+    text-decoration: underline;
+}
+
+.main_content {
+
 }
 
 .header, .footer {
     flex: 0 0 auto;
-    background-color: whitesmoke;
+    background-color: rgb(214, 233, 250);
     padding: 0 1rem;
 }
 
@@ -52,6 +57,10 @@ body {
 .header, .site-header {
     display: flex;
     justify-content: space-between;
+}
+
+.site-header {
+    align-items: center;
 }
 
 
@@ -82,11 +91,11 @@ body {
 }
 
 .title * {
-    color: #111;
+    color: #444;
 }
 
 .title p {
-    font-style: italic;
+    font-style: normal;
 }
 
 /* Footer */
@@ -95,10 +104,16 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
+    align-items: center;
+    background-color: #393232;
+    color: white;
 }
 
 .footer a {
     color: #222;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: white;
 }
 
 .footer .social {
@@ -114,7 +129,7 @@ body {
 }
 
 p, td, th, li, dd {
-    text-align: justify;
+    /* text-align: justify; */
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
@@ -171,5 +186,9 @@ blockquote {
 
 
 .me {
-    width: 200px;
+    width: 250px;
+    float: right;
+    border-radius: 5px;
+    margin-left: 1rem;
+    border: 1px solid lightgray;
 }
