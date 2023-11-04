@@ -29,7 +29,7 @@ body {
     flex: 1 0 auto;
     padding: 2rem 1rem;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 
 .main a {
@@ -107,6 +107,7 @@ body {
     align-items: center;
     background-color: #393232;
     color: white;
+    padding: 1rem;
 }
 
 .footer a {
