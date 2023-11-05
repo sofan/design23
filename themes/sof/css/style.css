@@ -3,6 +3,12 @@
     border: 0 none;
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 1em;
 }
 
 ol, ul {
@@ -23,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    color: #333;
 }
 
 .main {
@@ -40,10 +47,6 @@ body {
 .main a:hover {
     color: darkcyan;
     text-decoration: underline;
-}
-
-.main_content {
-
 }
 
 .header, .footer {

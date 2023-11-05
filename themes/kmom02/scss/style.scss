@@ -1,0 +1,146 @@
+
+/* Normalize */
+@use '../../node_modules/normalize.css/normalize';
+
+@use 'variables' as vars;
+@use 'fonts';
+@use 'mixins' as mix;
+
+@import 'blockquotes';
+@import 'code';
+@import 'mobile-menu';
+
+
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+p, td, th, li, dd {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: vars.$hover-color;
+}
+
+
+p {
+    font-size: 1em;
+}
+
+ol, ul {
+    padding-left: vars.$list-padding;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+body {
+    @include mix.flex-container(space-between, stretch);
+    flex-direction: column;
+    background-color: vars.$background-color;
+    color: vars.$font-color;
+    line-height: vars.$line-height;
+
+    .main {
+        flex: 1 0 auto;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 800px;
+    }
+
+    a {
+        color: vars.$main-link-color;
+    }
+
+    .me {
+        width: 250px;
+        border-radius: 5px;
+        margin: 1rem 0;
+        border: 1px solid vars.$font-color;
+        max-width: 100%;
+    }
+}
+
+/* Header and footer */
+
+.header, .footer {
+    flex: 0 0 auto;
+    padding: 0 1rem;
+}
+
+.logotitle {
+    @include mix.flex-container();
+}
+
+.header {
+
+    @include mix.flex-container(space-between, normal);
+    background-color: vars.$background-header-color;
+
+    .title, .logo {
+        padding: 1rem;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    a {
+        color: vars.$font-color-header;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+.site-header {
+    @include mix.flex-container(space-between, center);
+}
+
+/* Footer */
+
+.footer {
+
+    @include mix.flex-container();
+    border-top: 1px solid vars.$font-color;
+    background-color: vars.$background-footer-color;
+    color: vars.$font-color-footer;
+    padding: 0.5rem 1rem;
+
+    a {
+        padding: 0.5rem;
+        color: vars.$font-color-footer;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+}
+
+

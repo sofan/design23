@@ -1,11 +1,13 @@
 ---
-Logo: image/logo.png
-Tagline: Min rapportsida.
+Logo: image/logo.webp
+Tagline: Min rapportsida
 Social:
     - title: Länk till github repo
       url: https://github.com/sofan/design23
-      icon: github
+      icon: fab fa-github
+
     - title: Länk till kurssidan
       url: https://dbwebb.se/kurser/design-v3
-      icon: leaf
+      icon: fab fa-envira
+      iconunicode: '🌿'
 ---

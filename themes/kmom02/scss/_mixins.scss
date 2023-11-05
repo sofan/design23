@@ -1,0 +1,7 @@
+/* Code */
+
+@mixin flex-container($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
