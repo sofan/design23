@@ -1,0 +1,36 @@
+/* Header */
+
+
+.header {
+
+    flex: 0 0 auto;
+    padding: 0 1rem;
+
+    @include mix.flex-container(space-between, normal);
+    background-color: vars.$background-header-color;
+
+    .title, .logo {
+        padding: 1rem;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    a {
+        color: vars.$font-color-header;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+.site-header {
+    @include mix.flex-container(space-between, center);
+}
+
+.logotitle {
+    @include mix.flex-container();
+}
+

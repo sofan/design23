@@ -1,0 +1,23 @@
+/* Footer */
+
+.footer {
+
+    flex: 0 0 auto;
+    padding: 0 1rem;
+
+    @include mix.flex-container();
+    border-top: 1px solid vars.$font-color;
+    background-color: vars.$background-footer-color;
+    color: vars.$font-color-footer;
+    padding: 0.5rem 1rem;
+
+    a {
+        padding: 0.5rem;
+        color: vars.$font-color-footer;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+}
+

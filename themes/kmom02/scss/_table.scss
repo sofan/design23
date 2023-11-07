@@ -1,0 +1,30 @@
+/* Table */
+
+@use 'variables' as vars;
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+th {
+    background-color: vars.$table-header-color;
+    text-align: left;
+    padding: 0.5rem;
+    font-family: vars.$label-font;
+    font-weight: bold;
+}
+
+
+td {
+    border: 1px solid vars.$table-border-color;
+    padding: 0.5rem;
+}
+
+
+tr:nth-child(even) {
+    background-color: vars.$table-alt-color;
+}
+

@@ -5,14 +5,25 @@ $background-footer-color: #2C3A47; //rgb(214, 233, 250);
 $background-header-color: #393232;
 
 
-/* Colors */
+/* Font colors */
 $font-color: #333;
 $font-color-header: #fff;
 $font-color-footer: #fff;
-$main-link-color: #444;
+$main-link-color: #006400;
 $hover-color: #AFBF63;
+
+$img-border-color: #333;
+
+/* Table colors */
+$table-header-color: #c8d391;
+$table-border-color: #e0e0e0;
+$table-alt-color: #f9f9f9;
 
 
 /* Distances */
 $line-height: 1.4;
 $list-padding: 1.5em;
+
+/* Fonts */
+$label-font: 'Titillium Web', sans-serif;
+$paragraph-font: 'Roboto', sans-serif;

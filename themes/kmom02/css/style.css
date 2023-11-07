@@ -309,8 +309,11 @@ template {
 }
 
 /* Background colors */
-/* Colors */
+/* Font colors */
+/* Table colors */
 /* Distances */
+/* Fonts */
+/* Code */
 /* roboto-regular */
 @font-face {
   font-display: swap;
@@ -6425,7 +6428,6 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-/* Code */
 /* Blockquote */
 blockquote {
   font-style: italic;
@@ -6451,6 +6453,7 @@ pre {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   background: #f5f5f5;
+  margin: 1rem 0;
 }
 
 pre code {
@@ -6464,8 +6467,10 @@ pre code {
 }
 
 /* Background colors */
-/* Colors */
+/* Font colors */
+/* Table colors */
 /* Distances */
+/* Fonts */
 /* Mobile menu */
 .slide {
   overflow-y: hidden !important;
@@ -6523,6 +6528,90 @@ pre code {
     cursor: pointer;
   }
 }
+/* Footer */
+.footer {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  background-color: #2C3A47;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.footer a {
+  padding: 0.5rem;
+  color: #fff;
+}
+.footer .social {
+  font-size: 2rem;
+}
+
+/* Header */
+.header {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  background-color: #393232;
+}
+.header .title, .header .logo {
+  padding: 1rem;
+}
+.header h1 {
+  margin-top: 0;
+}
+.header a {
+  color: #fff;
+}
+.header img {
+  width: 100px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Background colors */
+/* Font colors */
+/* Table colors */
+/* Distances */
+/* Fonts */
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+th {
+  background-color: #c8d391;
+  text-align: left;
+  padding: 0.5rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6548,11 +6637,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
   color: #AFBF63;
+  text-decoration: underline;
 }
 
 p {
@@ -6562,6 +6652,7 @@ p {
 
 ol, ul {
   padding-left: 1.5em;
+  margin-bottom: 1rem;
 }
 
 .hidden {
@@ -6585,7 +6676,7 @@ body .main {
   max-width: 800px;
 }
 body a {
-  color: #444;
+  color: #006400;
 }
 body .me {
   width: 250px;
@@ -6593,59 +6684,4 @@ body .me {
   margin: 1rem 0;
   border: 1px solid #333;
   max-width: 100%;
-}
-
-/* Header and footer */
-.header, .footer {
-  flex: 0 0 auto;
-  padding: 0 1rem;
-}
-
-.logotitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: normal;
-  background-color: #393232;
-}
-.header .title, .header .logo {
-  padding: 1rem;
-}
-.header h1 {
-  margin-top: 0;
-}
-.header a {
-  color: #fff;
-}
-.header img {
-  width: 100px;
-}
-
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #333;
-  background-color: #2C3A47;
-  color: #fff;
-  padding: 0.5rem 1rem;
-}
-.footer a {
-  padding: 0.5rem;
-  color: #fff;
-}
-.footer .social {
-  font-size: 2rem;
 }

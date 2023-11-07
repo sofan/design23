@@ -3,12 +3,15 @@
 @use '../../node_modules/normalize.css/normalize';
 
 @use 'variables' as vars;
-@use 'fonts';
 @use 'mixins' as mix;
 
+@import 'fonts';
 @import 'blockquotes';
 @import 'code';
 @import 'mobile-menu';
+@import 'footer';
+@import 'header';
+@import 'table';
 
 
 * {
@@ -16,7 +19,7 @@
     border: 0 none;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: vars.$paragraph-font;
 }
 
 html, body {
@@ -33,15 +36,16 @@ p, td, th, li, dd {
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: vars.$label-font;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
     color: vars.$hover-color;
+    text-decoration: underline;
 }
 
 
@@ -52,6 +56,7 @@ p {
 
 ol, ul {
     padding-left: vars.$list-padding;
+    margin-bottom: 1rem;
 }
 
 .hidden {
@@ -82,66 +87,8 @@ body {
         width: 250px;
         border-radius: 5px;
         margin: 1rem 0;
-        border: 1px solid vars.$font-color;
+        border: 1px solid vars.$img-border-color;
         max-width: 100%;
     }
 }
-
-/* Header and footer */
-
-.header, .footer {
-    flex: 0 0 auto;
-    padding: 0 1rem;
-}
-
-.logotitle {
-    @include mix.flex-container();
-}
-
-.header {
-
-    @include mix.flex-container(space-between, normal);
-    background-color: vars.$background-header-color;
-
-    .title, .logo {
-        padding: 1rem;
-    }
-
-    h1 {
-        margin-top: 0;
-    }
-
-    a {
-        color: vars.$font-color-header;
-    }
-
-    img {
-        width: 100px;
-    }
-}
-
-.site-header {
-    @include mix.flex-container(space-between, center);
-}
-
-/* Footer */
-
-.footer {
-
-    @include mix.flex-container();
-    border-top: 1px solid vars.$font-color;
-    background-color: vars.$background-footer-color;
-    color: vars.$font-color-footer;
-    padding: 0.5rem 1rem;
-
-    a {
-        padding: 0.5rem;
-        color: vars.$font-color-footer;
-    }
-
-    .social {
-        font-size: 2rem;
-    }
-}
-
 
