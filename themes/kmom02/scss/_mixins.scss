@@ -5,3 +5,15 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+
+@mixin fixed-padding-and-no-growth {
+    flex: 0 0 auto;
+    padding: 0 1rem;
+}
+
+
+@mixin font-no-underline($color) {
+    color: $color;
+    text-decoration: none;
+}

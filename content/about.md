@@ -8,7 +8,7 @@ Om sidan
 ==========================
 
 Denna sida är byggd med Pico CMS. Sidorna är skrivna i Markdown som av Pico görs om till HTML, och template görs med twig.
-Jag har i kmom02 lagt till ett tema "kmom02" som använder SASS, där jag har använt mig av nästlade regler, variabler, importerade moduler och mixins. Ett väldigt trevligt sätt att jobba med stilar på.
+Jag har i kmom02 lagt till ett tema "kmom02" som använder SASS, där jag har använt mig av nästlade regler, variabler, importerade moduler och mixins. Ett väldigt trevligt sätt att jobba med stilar på. Jag valde att använda @use istället för @import vid import av moduler då SASS själva förespråkar det.
 
 
 ## Fonter

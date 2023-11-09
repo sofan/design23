@@ -5,8 +5,8 @@
 table {
     border-collapse: collapse;
     width: 100%;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    font-size: vars.$table-font-size;
+    margin-bottom: vars.$base-margin-bottom;
 }
 
 th {
@@ -19,7 +19,7 @@ th {
 
 
 td {
-    border: 1px solid vars.$table-border-color;
+    border: vars.$border-light-grey;
     padding: 0.5rem;
 }
 

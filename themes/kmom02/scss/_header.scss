@@ -1,11 +1,11 @@
 /* Header */
 
+@use 'variables' as vars;
+@use 'mixins' as mix;
 
 .header {
 
-    flex: 0 0 auto;
-    padding: 0 1rem;
-
+    @include mix.fixed-padding-and-no-growth;
     @include mix.flex-container(space-between, normal);
     background-color: vars.$background-header-color;
 
@@ -18,8 +18,9 @@
     }
 
     a {
-        color: vars.$font-color-header;
+        @include mix.font-no-underline(vars.$font-color-header);
     }
+
 
     img {
         width: 100px;

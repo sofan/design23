@@ -5,14 +5,13 @@
 @use 'variables' as vars;
 @use 'mixins' as mix;
 
-@import 'fonts';
-@import 'blockquotes';
-@import 'code';
-@import 'mobile-menu';
-@import 'footer';
-@import 'header';
-@import 'table';
-
+@use 'fonts';
+@use 'blockquotes';
+@use 'code';
+@use 'mobile-menu';
+@use 'footer';
+@use 'header';
+@use 'table';
 
 * {
     box-sizing: border-box;
@@ -43,20 +42,19 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
-    color: vars.$hover-color;
-    text-decoration: underline;
-}
-
 
 p {
-    font-size: 1em;
-    margin-bottom: 1rem;
+    font-size: vars.$base-font-size;
+    margin-bottom: vars.$base-margin-bottom;
 }
 
 ol, ul {
     padding-left: vars.$list-padding;
-    margin-bottom: 1rem;
+    margin-bottom: vars.$base-margin-bottom;
+
+    ul {
+        list-style-type: disclosure-closed;
+    }
 }
 
 .hidden {
@@ -69,26 +67,32 @@ body {
     flex-direction: column;
     background-color: vars.$background-color;
     color: vars.$font-color;
-    line-height: vars.$line-height;
+    line-height: vars.$base-line-height;
 
-    .main {
-        flex: 1 0 auto;
-        padding: 2rem 1rem;
-        margin: 0 auto;
-        width: 80%;
-        max-width: 800px;
-    }
 
     a {
         color: vars.$main-link-color;
+    }
+
+}
+
+
+.main {
+    flex: 1 0 auto;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+
+    a:hover {
+        color: vars.$hover-color;
     }
 
     .me {
         width: 250px;
         border-radius: 5px;
         margin: 1rem 0;
-        border: 1px solid vars.$img-border-color;
+        border: vars.$border-dark-grey;
         max-width: 100%;
     }
 }
-

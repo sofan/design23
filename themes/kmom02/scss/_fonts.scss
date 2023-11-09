@@ -17,13 +17,8 @@
     src: url('../../shared/fonts/google/titillium-web-v17-latin-regular.woff2') format('woff2');
 }
 
-
 /* Font awesome */
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
-
-//@import '../../shared/fontawesome/scss/regular';
-
-//@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins:wght@300;400;500&family=Roboto&family=Titillium+Web:wght@300&display=swap');

@@ -309,10 +309,10 @@ template {
 }
 
 /* Background colors */
-/* Font colors */
 /* Table colors */
 /* Distances */
 /* Fonts */
+/* Font colors */
 /* Code */
 /* roboto-regular */
 @font-face {
@@ -6440,8 +6440,8 @@ blockquote {
 code {
   margin: 0 0.1em;
   padding: 0.1em 0.2em;
-  border: 1px solid #ccc;
   border-radius: 0.3em;
+  border: 1px solid #ccc;
   background: #f5f5f5;
   font-family: monospace;
   font-size: 0.85rem;
@@ -6455,22 +6455,16 @@ pre {
   background: #f5f5f5;
   margin: 1rem 0;
 }
-
 pre code {
   display: block;
   margin: 0;
-  padding: 1.1111em 0;
+  padding: 1.1em 0;
   border: 0 none;
   background: transparent;
   overflow-x: auto;
   line-height: 1.4;
 }
 
-/* Background colors */
-/* Font colors */
-/* Table colors */
-/* Distances */
-/* Fonts */
 /* Mobile menu */
 .slide {
   overflow-y: hidden !important;
@@ -6480,6 +6474,7 @@ pre code {
 .nav ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 1em 0;
   list-style: none;
 }
@@ -6541,8 +6536,9 @@ pre code {
   padding: 0.5rem 1rem;
 }
 .footer a {
-  padding: 0.5rem;
   color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
 }
 .footer .social {
   font-size: 2rem;
@@ -6565,6 +6561,7 @@ pre code {
 }
 .header a {
   color: #fff;
+  text-decoration: none;
 }
 .header img {
   width: 100px;
@@ -6582,11 +6579,6 @@ pre code {
   align-items: center;
 }
 
-/* Background colors */
-/* Font colors */
-/* Table colors */
-/* Distances */
-/* Fonts */
 /* Table */
 table {
   border-collapse: collapse;
@@ -6604,7 +6596,7 @@ th {
 }
 
 td {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ccc;
   padding: 0.5rem;
 }
 
@@ -6640,11 +6632,6 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
-  color: #AFBF63;
-  text-decoration: underline;
-}
-
 p {
   font-size: 1em;
   margin-bottom: 1rem;
@@ -6653,6 +6640,9 @@ p {
 ol, ul {
   padding-left: 1.5em;
   margin-bottom: 1rem;
+}
+ol ul, ul ul {
+  list-style-type: disclosure-closed;
 }
 
 .hidden {
@@ -6668,17 +6658,21 @@ body {
   color: #333;
   line-height: 1.4;
 }
-body .main {
+body a {
+  color: #006400;
+}
+
+.main {
   flex: 1 0 auto;
   padding: 2rem 1rem;
   margin: 0 auto;
   width: 80%;
   max-width: 800px;
 }
-body a {
-  color: #006400;
+.main a:hover {
+  color: #AFBF63;
 }
-body .me {
+.main .me {
   width: 250px;
   border-radius: 5px;
   margin: 1rem 0;
