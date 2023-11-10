@@ -1,12 +1,4 @@
 
-/* roboto-regular */
-@font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../shared/fonts/google/roboto-v30-latin-regular.woff2') format('woff2');
-}
 
 /* titillium-web-regular */
 @font-face {
@@ -16,6 +8,16 @@
     font-weight: 400;
     src: url('../../shared/fonts/google/titillium-web-v17-latin-regular.woff2') format('woff2');
 }
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../shared/fonts/google/inter-v13-latin-regular.woff2') format('woff2');
+}
+
 
 /* Font awesome */
 @import '../../shared/fontawesome/scss/fontawesome';

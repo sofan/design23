@@ -12,7 +12,7 @@ Jag har i kmom02 lagt till ett tema "kmom02" som använder SASS, där jag har an
 
 
 ## Fonter
-Som fonter används Roboto och Tillium Web från Google fonts vilka jag (enligt extrauppgiften) laddad hem och importerat lokalt för att minska antalet beroenden mot andra tjänster.
+Som fonter används Inter och Tillium Web från Google fonts vilka jag (enligt extrauppgiften) laddad hem och importerat lokalt för att minska antalet beroenden mot andra tjänster.
 
 ## Ikoner
 Av de ikoner som visas i footern är den ena (Github) en ikon från Font Awesome medan den andra är en Unicode-ikon. Jag ville testa både sätten att göra det på men tänker att det nog är bättre att endast använda Unicode.
