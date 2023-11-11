@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
     font-family: vars.$label-font;
+    letter-spacing: 0.2rem;
 }
 
 a {
@@ -85,7 +86,9 @@ body {
     max-width: 800px;
 
     a:hover {
-        color: vars.$hover-color;
+        color: vars.$background-color;
+        background-color: vars.$hover-color;
+        text-decoration: none;
     }
 
     .me {
