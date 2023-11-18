@@ -6891,6 +6891,7 @@ tr:nth-child(even) {
 @media (max-width: 600px) {
   .landingpage {
     grid-template-columns: 1fr;
+    grid-auto-rows: auto;
   }
   .landingpage h1 {
     grid-column: span 1;
@@ -6899,6 +6900,9 @@ tr:nth-child(even) {
   .landingpage .box {
     grid-column: span 1;
     grid-row: span 1;
+  }
+  .landingpage .box a {
+    font-size: 1.5rem;
   }
   .technology {
     grid-template-areas: "main";

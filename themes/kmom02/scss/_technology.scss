@@ -112,6 +112,7 @@
 @media (max-width: 600px) {
     .landingpage {
         grid-template-columns: 1fr;
+        grid-auto-rows: auto;
 
         h1 {
             grid-column: span 1;
@@ -121,6 +122,10 @@
         .box {
             grid-column: span 1;
             grid-row: span 1;
+        }
+
+        .box a {
+            font-size: 1.5rem;
         }
     }
 
