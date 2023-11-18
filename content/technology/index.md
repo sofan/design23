@@ -1,13 +1,13 @@
 ---
 Title: Technologies
-Description: This is my technologies page.
+Description: This is my technology page.
 Template: technologies
 ---
 
 Technologies
 ==========================
 
-<div class="box span21">
+<div class="box col2">
     <a href="technology/css">CSS</a>
 </div>
 
@@ -15,22 +15,22 @@ Technologies
     <a href="technology/git">GIT</a>
 </div>
 
-<div class="box">
+<div class="box row2">
     <a href="technology/html">HTML</a>
 </div>
 
-<div class="box span22">
+<div class="box col2 row2">
     <a href="technology/javascript">JAVASCRIPT</a>
 </div>
 
-<div class="box">
+<div class="box col3">
     <a href="technology/php">PHP</a>
 </div>
 
-<div class="box span21">
+<div class="box">
     <a href="technology/python">PYTHON</a>
 </div>
 
-<div class="box">
+<div class="box col2">
     <a href="technology/sqlite">SQLITE</a>
 </div>
