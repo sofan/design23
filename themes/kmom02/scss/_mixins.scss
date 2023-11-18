@@ -30,8 +30,8 @@
 
 @mixin box-border($width: 1px, $color: vars.$border-dark-grey) {
     border-radius: 10px;
-    border-right: 2px solid vars.$border-dark-grey;
-    border-bottom: 2px solid vars.$border-dark-grey;
+    border-right: vars.$border-dark-grey;
+    border-bottom: vars.$border-dark-grey;
     box-shadow: 3px 3px vars.$box-shadow-blur vars.$box-shadow-color;
 }
 

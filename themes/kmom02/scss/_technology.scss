@@ -8,6 +8,7 @@
 .landingpage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, 1fr);
     grid-gap: 1rem;
 
     h1 {
@@ -16,11 +17,15 @@
     }
 }
 
-.box {
-    display: grid;
-    padding: 0;
+.box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     a {
+        width: 100%;
+        height: 100%;
         @include mix.flex-center;
         @include  mix.box-border;
         color: vars.$font-color;
@@ -29,9 +34,8 @@
         font-family: vars.$label-font;
         padding: 0.5rem;
         word-break: break-all;
+        text-align: center;
     }
-
-
 }
 
 /** set box links background and hover color  */
@@ -41,21 +45,18 @@
     }
 }
 
-
-.span21 {
+.col2 {
     grid-column: span 2;
 }
 
-.span12 {
-    grid-column: span 1;
-    grid-row: span 2;
+.col3 {
+    grid-column: span 3
 }
 
-.span22 {
-    grid-column: span 2;
+
+.row2 {
     grid-row: span 2;
 }
-
 
 
 
@@ -108,9 +109,8 @@
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .landingpage {
-
         grid-template-columns: 1fr;
 
         h1 {

@@ -6703,6 +6703,7 @@ tr:nth-child(even) {
 .landingpage {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, 1fr);
   grid-gap: 1rem;
 }
 .landingpage h1 {
@@ -6711,16 +6712,19 @@ tr:nth-child(even) {
 }
 
 .box {
-  display: grid;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box a {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  border-right: 2px solid 1px solid #333;
-  border-bottom: 2px solid 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
   box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.9098039216);
   color: #333;
   font-size: 2rem;
@@ -6728,6 +6732,7 @@ tr:nth-child(even) {
   font-family: "Titillium Web", sans-serif;
   padding: 0.5rem;
   word-break: break-all;
+  text-align: center;
 }
 
 /** set box links background and hover color  */
@@ -6780,17 +6785,15 @@ tr:nth-child(even) {
   background-color: #f1b35d;
 }
 
-.span21 {
+.col2 {
   grid-column: span 2;
 }
 
-.span12 {
-  grid-column: span 1;
-  grid-row: span 2;
+.col3 {
+  grid-column: span 3;
 }
 
-.span22 {
-  grid-column: span 2;
+.row2 {
   grid-row: span 2;
 }
 
@@ -6820,8 +6823,8 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  border-right: 2px solid 1px solid #333;
-  border-bottom: 2px solid 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
   box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.9098039216);
   font-family: "Titillium Web", sans-serif;
   color: #333;
@@ -6885,7 +6888,7 @@ tr:nth-child(even) {
   background-color: #f1b35d;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .landingpage {
     grid-template-columns: 1fr;
   }
