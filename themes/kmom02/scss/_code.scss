@@ -11,6 +11,7 @@ code {
     font-family: vars.$code-font;
     font-size: vars.$code-font-size;
     line-height: vars.$code-line-height;
+    white-space: pre-wrap;
 }
 
 pre {
@@ -26,8 +27,8 @@ pre {
         padding: 1.1em 0;
         border: 0 none;
         background: transparent;
-        overflow-x: auto;
         line-height: vars.$base-line-height;
+        overflow-wrap: anywhere;
     }
 }
 

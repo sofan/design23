@@ -308,12 +308,6 @@ template {
   display: none;
 }
 
-/* Background colors */
-/* Table colors */
-/* Distances */
-/* Fonts */
-/* Font colors */
-/* Code */
 /* titillium-web-regular */
 @font-face {
   font-display: swap;
@@ -6428,182 +6422,16 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-/* Blockquote */
-blockquote {
-  font-style: italic;
-  margin-left: 1em;
-  padding-left: 1em;
-  border-left: 0.5em solid #f5f5f5;
-}
-
+/* main.scss */
+/* Background colors */
+/* Table colors */
+/* Distances */
+/* Fonts */
+/* Font colors */
+/* box*/
+/* main.scss */
 /* Code */
-code {
-  margin: 0 0.1em;
-  padding: 0.1em 0.2em;
-  border-radius: 0.3em;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
-  font-family: monospace;
-  font-size: 0.85rem;
-  line-height: 1.9824;
-}
-
-pre {
-  padding: 0 1em;
-  border: 1px solid #ccc;
-  border-radius: 0.3em;
-  background: #f5f5f5;
-  margin: 1rem 0;
-}
-pre code {
-  display: block;
-  margin: 0;
-  padding: 1.1em 0;
-  border: 0 none;
-  background: transparent;
-  overflow-x: auto;
-  line-height: 1.4;
-}
-
-/* Mobile menu */
-.slide {
-  overflow-y: hidden !important;
-  transition: height 0.5s ease-in !important;
-}
-
-.nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1em 0;
-  list-style: none;
-}
-.nav ul li {
-  padding: 0 1em;
-}
-.nav a:hover {
-  color: #AFBF63;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-@media (max-width: 380px) {
-  .site-header, .logotitle {
-    flex-direction: column;
-  }
-}
-@media (max-width: 767px) {
-  .header {
-    flex-direction: column;
-    align-items: normal;
-  }
-  .nav ul {
-    flex-direction: column;
-    padding-bottom: 1em;
-  }
-  .nav ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .nav ul li a {
-    display: block;
-    padding: 0.5em 0;
-  }
-  .js .nav-toggle {
-    display: block;
-    float: right;
-    width: 2em;
-    margin: 0.6667em 0;
-    font-size: 1.5rem;
-    line-height: 2em;
-    text-align: center;
-    cursor: pointer;
-  }
-}
-/* Footer */
-.footer {
-  flex: 0 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #333;
-  background-color: #2C3A47;
-  color: #fff;
-  padding: 0.5rem 1rem;
-}
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-.footer .social {
-  font-size: 2rem;
-}
-
-/* Header */
-.header {
-  flex: 0 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: normal;
-  background-color: #393232;
-}
-.header .title, .header .logo {
-  padding: 1rem;
-}
-.header h1 {
-  margin-top: 0;
-}
-.header a {
-  color: #fff;
-  text-decoration: none;
-}
-.header img {
-  width: 100px;
-}
-
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logotitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Table */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-
-th {
-  background-color: #c8d391;
-  text-align: left;
-  padding: 0.5rem;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: bold;
-}
-
-td {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
+/** function to set link background-color and hover color */
 * {
   box-sizing: border-box;
   border: 0 none;
@@ -6681,4 +6509,400 @@ body a {
   margin: 1rem 0;
   border: 1px solid #333;
   max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 95%;
+  }
+}
+/* main.scss */
+/* Footer */
+.footer {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  background-color: #2C3A47;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.footer .social {
+  font-size: 2rem;
+}
+
+/* main.scss */
+/* Header */
+.header {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  background-color: #393232;
+}
+.header .title, .header .logo {
+  padding: 1rem;
+}
+.header h1 {
+  margin-top: 0;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+.header img {
+  width: 100px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Blockquote */
+blockquote {
+  font-style: italic;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 0.5em solid #f5f5f5;
+}
+
+/* main.scss */
+/* Code */
+code {
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
+  border-radius: 0.3em;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  font-family: monospace;
+  font-size: 0.85rem;
+  line-height: 1.9824;
+  white-space: pre-wrap;
+}
+
+pre {
+  padding: 0 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  background: #f5f5f5;
+  margin: 1rem 0;
+}
+pre code {
+  display: block;
+  margin: 0;
+  padding: 1.1em 0;
+  border: 0 none;
+  background: transparent;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+/* main.scss */
+/* Mobile menu */
+.slide {
+  overflow-y: hidden !important;
+  transition: height 0.5s ease-in !important;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 0;
+  list-style: none;
+}
+.nav ul li {
+  padding: 0 1em;
+}
+.nav a:hover {
+  color: #AFBF63;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 380px) {
+  .site-header, .logotitle {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+  .nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+  .js .nav-toggle {
+    display: block;
+    float: right;
+    width: 2em;
+    margin: 0.6667em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+/* main.scss */
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+th {
+  background-color: #c8d391;
+  text-align: left;
+  padding: 0.5rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* main.scss */
+/* technology.scss */
+.landingpage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.box {
+  display: grid;
+  padding: 0;
+}
+.box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-right: 2px solid 1px solid #333;
+  border-bottom: 2px solid 1px solid #333;
+  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.9098039216);
+  color: #333;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  padding: 0.5rem;
+  word-break: break-all;
+}
+
+/** set box links background and hover color  */
+.box:nth-child(2) a {
+  background-color: #95d1dc;
+}
+.box:nth-child(2) a:hover {
+  background-color: #aadae3;
+}
+
+.box:nth-child(3) a {
+  background-color: #ff6845;
+}
+.box:nth-child(3) a:hover {
+  background-color: #ff866a;
+}
+
+.box:nth-child(4) a {
+  background-color: #f9d545;
+}
+.box:nth-child(4) a:hover {
+  background-color: #fadd6a;
+}
+
+.box:nth-child(5) a {
+  background-color: #4caa58;
+}
+.box:nth-child(5) a:hover {
+  background-color: #6dbe77;
+}
+
+.box:nth-child(6) a {
+  background-color: #1a77a3;
+}
+.box:nth-child(6) a:hover {
+  background-color: #239fda;
+}
+
+.box:nth-child(7) a {
+  background-color: #6fcb9f;
+}
+.box:nth-child(7) a:hover {
+  background-color: #8cd5b2;
+}
+
+.box:nth-child(8) a {
+  background-color: #eea034;
+}
+.box:nth-child(8) a:hover {
+  background-color: #f1b35d;
+}
+
+.span21 {
+  grid-column: span 2;
+}
+
+.span12 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.span22 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.technology {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "sidebar main";
+}
+.technology h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 100%;
+  grid-area: main;
+}
+
+.techaside {
+  grid-area: sidebar;
+  margin: 0;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+  line-height: 3rem;
+}
+.techaside a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-right: 2px solid 1px solid #333;
+  border-bottom: 2px solid 1px solid #333;
+  box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.9098039216);
+  font-family: "Titillium Web", sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.techaside a:hover {
+  color: #fff;
+}
+
+/** set links background and hover color  */
+.techlink:nth-child(1) a {
+  background-color: #95d1dc;
+}
+.techlink:nth-child(1) a:hover {
+  background-color: #aadae3;
+}
+
+.techlink:nth-child(2) a {
+  background-color: #ff6845;
+}
+.techlink:nth-child(2) a:hover {
+  background-color: #ff866a;
+}
+
+.techlink:nth-child(3) a {
+  background-color: #f9d545;
+}
+.techlink:nth-child(3) a:hover {
+  background-color: #fadd6a;
+}
+
+.techlink:nth-child(4) a {
+  background-color: #4caa58;
+}
+.techlink:nth-child(4) a:hover {
+  background-color: #6dbe77;
+}
+
+.techlink:nth-child(5) a {
+  background-color: #1a77a3;
+}
+.techlink:nth-child(5) a:hover {
+  background-color: #239fda;
+}
+
+.techlink:nth-child(6) a {
+  background-color: #6fcb9f;
+}
+.techlink:nth-child(6) a:hover {
+  background-color: #8cd5b2;
+}
+
+.techlink:nth-child(7) a {
+  background-color: #eea034;
+}
+.techlink:nth-child(7) a:hover {
+  background-color: #f1b35d;
+}
+
+@media (max-width: 500px) {
+  .landingpage {
+    grid-template-columns: 1fr;
+  }
+  .landingpage h1 {
+    grid-column: span 1;
+    letter-spacing: 0;
+  }
+  .landingpage .box {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .technology {
+    grid-template-areas: "main";
+    grid-template-columns: auto;
+  }
+  .techaside {
+    grid-area: unset;
+    display: none;
+  }
 }

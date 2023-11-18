@@ -1,4 +1,7 @@
 /* Code */
+@use 'sass:list';
+@use 'sass:color';
+@use 'variables' as vars;
 
 @mixin flex-container($justify: space-between, $align: center) {
     display: flex;
@@ -16,4 +19,30 @@
 @mixin font-no-underline($color) {
     color: $color;
     text-decoration: none;
+}
+
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-border($width: 1px, $color: vars.$border-dark-grey) {
+    border-radius: 10px;
+    border-right: 2px solid vars.$border-dark-grey;
+    border-bottom: 2px solid vars.$border-dark-grey;
+    box-shadow: 3px 3px vars.$box-shadow-blur vars.$box-shadow-color;
+}
+
+
+/** function to set link background-color and hover color */
+@mixin link-styling($index, $lighten) {
+    a {
+        background-color: list.nth(vars.$box-colors, $index);
+
+        &:hover {
+            background-color: color.scale(list.nth(vars.$box-colors, $index), $lightness: $lighten);
+        }
+    }
 }

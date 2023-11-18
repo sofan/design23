@@ -1,0 +1,136 @@
+/* technology.scss */
+
+@use 'sass:list';
+@use 'sass:color';
+@use 'variables' as vars;
+@use 'mixins' as mix;
+
+.landingpage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    h1 {
+        grid-column: span 3;
+        justify-self: center;
+    }
+}
+
+.box {
+    display: grid;
+    padding: 0;
+
+    a {
+        @include mix.flex-center;
+        @include  mix.box-border;
+        color: vars.$font-color;
+        font-size: 2rem;
+        text-decoration: none;
+        font-family: vars.$label-font;
+        padding: 0.5rem;
+        word-break: break-all;
+    }
+
+
+}
+
+/** set box links background and hover color  */
+@for $i from 1 through length(vars.$box-colors) {
+    .box:nth-child(#{$i + 1}) {
+        @include mix.link-styling($i, 20%);
+    }
+}
+
+
+.span21 {
+    grid-column: span 2;
+}
+
+.span12 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.span22 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+
+.technology {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 'sidebar main';
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.container {
+    max-width: 100%;
+    grid-area: main;
+}
+
+.techaside {
+    grid-area: sidebar;
+    margin: 0;
+    padding: 1rem;
+    border-right: vars.$border-light-grey;
+    line-height: 3rem;
+
+    a {
+        @include mix.flex-center;
+        @include  mix.box-border;
+        font-family: vars.$label-font;
+        color: vars.$font-color;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    a:hover {
+        color: vars.$hover-box;
+    }
+}
+
+
+/** set links background and hover color  */
+@for $i from 1 through length(vars.$box-colors) {
+    .techlink:nth-child(#{$i}) {
+        @include mix.link-styling($i, 20%);
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .landingpage {
+
+        grid-template-columns: 1fr;
+
+        h1 {
+            grid-column: span 1;
+            letter-spacing: 0;
+        }
+
+        .box {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+
+    .technology {
+        grid-template-areas: 'main';
+        grid-template-columns: auto;
+    }
+
+    .techaside {
+        grid-area: unset;
+        display: none;
+    }
+}
