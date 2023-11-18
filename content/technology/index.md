@@ -8,29 +8,29 @@ Technologies
 ==========================
 
 <div class="box col2">
-    <a href="technology/css">CSS</a>
+    <a href="%base_url%?technology/css">CSS</a>
 </div>
 
 <div class="box">
-    <a href="technology/git">GIT</a>
+    <a href="%base_url%?technology/git">GIT</a>
 </div>
 
 <div class="box row2">
-    <a href="technology/html">HTML</a>
+    <a href="%base_url%?technology/html">HTML</a>
 </div>
 
 <div class="box col2 row2">
-    <a href="technology/javascript">JAVASCRIPT</a>
+    <a href="%base_url%?technology/javascript">JAVASCRIPT</a>
 </div>
 
 <div class="box col3">
-    <a href="technology/php">PHP</a>
+    <a href="%base_url%?technology/php">PHP</a>
 </div>
 
 <div class="box">
-    <a href="technology/python">PYTHON</a>
+    <a href="%base_url%?technology/python">PYTHON</a>
 </div>
 
 <div class="box col2">
-    <a href="technology/sqlite">SQLITE</a>
+    <a href="%base_url%?technology/sqlite">SQLITE</a>
 </div>
