@@ -1,0 +1,9 @@
+/* $theme: 'light' !default; */
+@use 'footer';// as footer with ($theme: $theme);
+@use 'header'; // as header with ($theme: $theme);
+@use 'code' ;//as code with ($theme: $theme);
+@use 'blockquotes';// as blockquotes with ($theme: $theme);
+@use 'mobile-menu';// as mobile-menu with ($theme: $theme);
+@use 'table';// as table with ($theme: $theme);
+@use 'technology';// as tech with ($theme: $theme);
+@use 'report';// as report with ($theme: $theme);

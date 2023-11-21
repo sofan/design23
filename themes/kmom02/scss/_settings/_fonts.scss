@@ -1,5 +1,11 @@
 
 
+/* Font awesome */
+@import '../../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../../shared/fontawesome/scss/brands';
+@import '../../../shared/fontawesome/scss/solid';
+
 /* titillium-web-regular */
 @font-face {
     font-display: swap;
@@ -19,8 +25,3 @@
 }
 
 
-/* Font awesome */
-@import '../../shared/fontawesome/scss/fontawesome';
-$fa-font-path: '../../shared/fontawesome/webfonts';
-@import '../../shared/fontawesome/scss/brands';
-@import '../../shared/fontawesome/scss/solid';

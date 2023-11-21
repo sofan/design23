@@ -1,0 +1,11 @@
+/* Blockquote */
+/* $theme: 'light' !default; */
+@use 'sass:map';
+@use '../_settings/' as settings;
+
+blockquote {
+    font-style: italic;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: map.get(settings.$borders, 'blockquote-border-left');
+}

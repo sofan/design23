@@ -1,0 +1,32 @@
+/* Footer */
+/* $theme: 'light' !default; */
+@use 'sass:map';
+@use '../_settings/' as settings;
+@use '../mixins/' as mix;
+
+
+
+.footer {
+
+    @include mix.fixed-padding-and-no-growth;
+    @include mix.flex-container;
+    border-top: 1px solid map.get(settings.$colors, 'background-footer-color');
+    background-color:  map.get(settings.$colors, 'background-footer-color');
+    color: map.get(settings.$colors, 'font-color-footer');
+    padding: 0.5rem 1rem;
+
+    a {
+        @include mix.font-no-underline(map.get(settings.$colors, 'font-color-footer'));
+        padding: 0.5rem;
+    }
+
+    a:hover {
+        color: map.get(settings.$colors, 'header-footer-hover-color');
+    }
+
+    .social {
+        font-size: 1.5rem;
+    }
+}
+
+

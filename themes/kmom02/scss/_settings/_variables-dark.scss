@@ -1,0 +1,60 @@
+@use 'fonts';
+
+$a: #1E1E1E;
+$b: #303437;
+$c: #121617;
+$d: #42341a;
+$e: #17272B;
+$f: #d3d0d0;
+
+
+$colors: (
+'bg': #282a2b,
+'background-footer-color': #1E1E1E,
+'background-header-color': #1E1E1E,
+'background-code-color': #303437,
+'font-color': #d3d0d0,
+'font-color-header': #d3d0d0,
+'font-color-footer': #d3d0d0,
+'h1-color': #d3d0d0,
+'main-link-color': #ca8606,
+'hover-color': #ca8606,
+'header-footer-hover-color': #ca8606,
+'hover-box': #fff,
+'report-box-color': #17272B,
+'report-link-color': #d3d0d0,
+'table-bg-color': #36393c,
+'table-header-color': #2c3e50,
+'table-alt-color':  #464748,
+'table-border-color': #182628,
+
+box-colors: (
+    #312121,
+    $b,
+    $c,
+    $d,
+    $e
+),
+
+'box-hover-lightness': 5%,
+'box-hover-font-color': #585757
+
+);
+
+$fonts: (
+'label-font': 'Titillium Web',
+'paragraph-font': 'Inter',
+'base-font-size': 1em,
+'social-font-size': 1.5rem,
+'code-font-size': 0.85rem,
+'table-font-size': 0.9rem,
+'base-line-height': 1.4,
+'code-line-height': 1.9824
+);
+
+$borders: (
+'border-dark-grey': 1px solid #333,
+'border-light-grey': 1px solid #ccc,
+'blockquote-border-left': 1px solid #ccc,
+'code-border': 1px solid #463e3e
+);

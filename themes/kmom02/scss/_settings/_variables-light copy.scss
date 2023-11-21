@@ -1,0 +1,55 @@
+@use 'fonts';
+
+$colors: (
+'bg': #fff,
+'font-color': #333,
+'font-color-header': #fff,
+'font-color-footer': #fff,
+'main-link-color': #006400,
+'hover-color': #AFBF63,
+'hover-box': #fff,
+'background-footer-color': #2C3A47,
+'background-header-color': #026E81,
+'background-code-color': #f5f5f5,
+'report-box-color': rgb(159, 220, 244),
+'report-link-color': #333,
+'dark-grey': 1px solid #333,
+'light-grey': 1px solid #ccc,
+'table-header-color': #c8d391,
+'table-border-color': #e0e0e0,
+'table-alt-color': #f9f9f9,
+box-colors: (
+    #95d1dc,
+    #ff6845,
+    #f9d545,
+    #4caa58,
+    #1a77a3,
+    #6fcb9f,
+    #eea034
+)
+
+
+/* Color Theme Swatches in Hex */
+/* Complementary*/
+/* $color1: #026E81,
+$color2: #00ABBD,
+$color3: #0099DD,
+$color4: #FF9933,
+$color5: #A1C7E0 */
+);
+
+$fonts: (
+'label-font': 'Titillium Web',
+'paragraph-font': 'Inter',
+'base-font-size': 1em,
+'social-font-size': 1.5rem,
+'code-font-size': 0.85rem,
+'table-font-size': 0.9rem,
+'base-line-height': 1.4,
+'code-line-height': 1.9824
+);
+
+$borders: (
+'border-dark-grey': 1px solid #333,
+'border-light-grey': 1px solid #ccc
+);

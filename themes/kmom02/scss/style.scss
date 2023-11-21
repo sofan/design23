@@ -2,12 +2,15 @@
 /* Normalize */
 @use '../../node_modules/normalize.css/normalize';
 
-@use 'fonts';
-@use 'main';
-@use 'footer';
-@use 'header';
-@use 'blockquotes';
-@use 'code';
-@use 'mobile-menu';
-@use 'table';
-@use 'technology';
+@use '_settings' as settings with (
+    $theme: 'light'
+);
+
+@use 'base';
+@use 'components';
+
+/* @use 'components' as comp with (
+    $theme: 'light'
+);
+
+ */

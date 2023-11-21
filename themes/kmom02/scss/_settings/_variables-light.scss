@@ -1,0 +1,59 @@
+@use 'fonts';
+
+$a: #026E81;
+$b: #00ABBD;
+$c: #09d;
+$d: #f93;
+$e: #A1C7E0;
+
+
+
+$colors: (
+'bg': #fff,
+'background-footer-color': $a,
+'background-header-color': $a,
+'background-code-color': #eee,
+'font-color': #333,
+'font-color-header': #fff,
+'font-color-footer': #fff,
+'h1-color': #333,
+'main-link-color': $a,
+'hover-color': $d,
+'header-footer-hover-color': #00ABBD,
+'hover-box': #fff,
+'report-box-color': $d,
+'report-link-color': #333,
+'table-bg-color': transparent,
+'table-header-color':  #f93,
+'table-alt-color':  #eee,
+'table-border-color': #f93,
+
+box-colors: (
+    $a,
+    $b,
+    $c,
+    $d,
+    $e
+),
+'box-hover-lightness': 20%,
+'box-hover-font-color': #fff
+
+);
+
+$fonts: (
+'label-font': 'Titillium Web',
+'paragraph-font': 'Inter',
+'base-font-size': 1em,
+'social-font-size': 1.5rem,
+'code-font-size': 0.85rem,
+'table-font-size': 0.9rem,
+'base-line-height': 1.4,
+'code-line-height': 1.9824
+);
+
+$borders: (
+'border-dark-grey': 1px solid #333,
+'border-light-grey': 1px solid #ccc,
+'blockquote-border-left': 1px solid #ccc,
+'code-border': 1px solid #ccc
+);

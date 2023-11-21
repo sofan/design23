@@ -1,7 +1,12 @@
-/* Code */
+/* Mixins.scss */
 @use 'sass:list';
 @use 'sass:color';
-@use 'variables' as vars;
+@use 'sass:map';
+@use '../_settings/' as settings;
+
+
+
+$box-colors: map.get(settings.$colors, 'box-colors');
 
 @mixin flex-container($justify: space-between, $align: center) {
     display: flex;
@@ -28,21 +33,21 @@
     align-items: center;
 }
 
-@mixin box-border($width: 1px, $color: vars.$border-dark-grey) {
+@mixin box-border($width: 1px, $color: #333, $shadow-color: #333333e8, $blur: 3px) {
     border-radius: 10px;
-    border-right: vars.$border-dark-grey;
-    border-bottom: vars.$border-dark-grey;
-    box-shadow: 3px 3px vars.$box-shadow-blur vars.$box-shadow-color;
+    border-right: $color;
+    border-bottom: $color;
+    box-shadow: 3px 3px $blur $shadow-color;
 }
 
 
 /** function to set link background-color and hover color */
 @mixin link-styling($index, $lighten) {
     a {
-        background-color: list.nth(vars.$box-colors, $index);
+        background-color: list.nth($box-colors, $index);
 
         &:hover {
-            background-color: color.scale(list.nth(vars.$box-colors, $index), $lightness: $lighten);
+            background-color: color.scale(list.nth($box-colors, $index), $lightness: $lighten);
         }
     }
 }

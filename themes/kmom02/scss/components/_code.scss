@@ -1,0 +1,41 @@
+/* Code */
+/* $theme: 'light' !default; */
+@use 'sass:map';
+@use 'sass:color';
+@use '../_settings/' as settings;
+
+$line-height: map.get(settings.$fonts, 'code-line-height');
+$bg-color: map.get(settings.$colors, 'background-code-color');
+$code-border: map.get(settings.$borders, 'code-border');
+
+
+code {
+    margin: 0 0.1em;
+    padding: 0.1em 0.2em;
+    border-radius: 0.1em;
+    border: $code-border;
+    background: $bg-color;
+    font-family: monospace;
+    font-size: map.get(settings.$fonts, 'code-font-size');
+    line-height: $line-height;
+    white-space: pre-wrap;
+}
+
+pre {
+    padding: 0 1em;
+    border: $code-border;
+    border-radius: 0.1em;
+    background: $bg-color;
+    margin: 1rem 0;
+
+    code {
+        display: block;
+        margin: 0;
+        padding: 1.1em 0;
+        border: 0 none;
+        background: transparent;
+        line-height: $line-height;
+        overflow-wrap: anywhere;
+    }
+}
+

@@ -1,13 +1,16 @@
 /* Header */
+/* $theme: 'light' !default; */
+@use 'sass:map';
+@use '../_settings/' as settings;
+@use '../mixins/' as mix;
 
-@use 'variables' as vars;
-@use 'mixins' as mix;
+$font-color: map.get(settings.$colors, 'font-color-header');
 
 .header {
 
     @include mix.fixed-padding-and-no-growth;
     @include mix.flex-container(space-between, normal);
-    background-color: vars.$background-header-color;
+    background-color: map.get(settings.$colors, 'background-header-color');
 
     .title, .logo {
         padding: 1rem;
@@ -18,9 +21,8 @@
     }
 
     a {
-        @include mix.font-no-underline(vars.$font-color-header);
+        @include mix.font-no-underline($font-color);
     }
-
 
     img {
         width: 100px;

@@ -1,0 +1,38 @@
+/* Table */
+/* $theme: 'light' !default; */
+@use 'sass:map';
+@use 'sass:color';
+@use '../_settings/' as settings;
+
+$table-border-color: map.get(settings.$colors, 'table-border-color');
+$table-bg-color: map.get(settings.$colors, 'table-bg-color');
+$table-alt-color: map.get(settings.$colors, 'table-alt-color');
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: map.get(settings.$fonts, 'table-font-size');
+    margin-bottom: 1rem;
+    background-color: $table-bg-color;
+}
+
+th {
+    background-color: map.get(settings.$colors, 'table-header-color');
+    text-align: left;
+    padding: 0.5rem;
+    font-family: map.get(settings.$fonts, 'label-font');
+    font-weight: bold;
+}
+
+
+td {
+    border: 1px solid $table-border-color;
+    padding: 0.5rem;
+}
+
+
+tr:nth-child(even) {
+    background-color: $table-alt-color;
+}
+

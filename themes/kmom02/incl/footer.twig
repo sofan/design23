@@ -4,7 +4,7 @@
     </div>
     <div class="social">
         {% for social in pages["_meta"].meta.social %}
-        <a target="blank" href="{{ social.url }}" title="{{ social.title }}" role="button">
+        <a target="{{ social.target }}" href="{{ social.url }}" title="{{ social.title }}" role="button">
             {% if social.iconunicode %}
                 {{ social.iconunicode }}
             {% else %}

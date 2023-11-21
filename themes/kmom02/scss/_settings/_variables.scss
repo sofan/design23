@@ -1,0 +1,16 @@
+$theme: 'light' !default;
+
+@use 'variables-light' as vars-light;
+@use 'variables-dark' as vars-dark;
+
+// Set default
+$colors: vars-light.$colors !default;
+$fonts: vars-light.$fonts !default;
+$borders: vars-light.$borders !default;
+
+// If dark theme, use dark variables
+@if $theme == 'dark' {
+    $colors: vars-dark.$colors;
+    $fonst: vars-dark.$fonts;
+    $borders: vars-dark.$borders;
+}

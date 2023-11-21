@@ -5,13 +5,13 @@
 
     <div class="main technology" role="main">
 
-            <aside class="techaside">
-            {% for page in pages("technology")|sort_by("Index") if not page.hidden %}
-                <div class="techlink">
-                    <a href="{{ page.url }}">{{ page.title }}</a>
-                </div>
-            {% endfor %}
-            </aside>
+        <aside class="techaside">
+        {% for page in pages("technology")|sort_by("Index") if not page.hidden %}
+            <div class="techlink">
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+        {% endfor %}
+        </aside>
 
         <div class="container">
             {{ content }}

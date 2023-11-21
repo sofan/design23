@@ -1,7 +1,9 @@
 /* Mobile menu */
+$theme: 'light' !default;
+@use 'sass:map';
+@use '../_settings/' as settings;
+@use '../mixins/' as mix;
 
-@use 'variables' as vars;
-@use 'mixins' as mix;
 
 .slide {
     overflow-y: hidden !important;
@@ -20,7 +22,7 @@
     }
 
     a:hover {
-        color: vars.$hover-color;
+        color: map.get(settings.$colors, 'header-footer-hover-color');
     }
 }
 
