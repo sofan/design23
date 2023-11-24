@@ -34,7 +34,7 @@ Det ljusa temat använder ett komplementärt färgschema där basfärgen är bl�
 </table>
 </div>
 
-Det mörka temat använder har mer mörk och jordnära ton men med lite inslag av guld. Det är inte strikt monokromatiskt, analogt eller komplementärt, utan snarare en kombination av olika färger som fungerar harmoniskt tillsammans och där guldtonen sticker ut en aning.
+Det mörka temat har en mer mörk och jordnära ton men med lite inslag av guld. Det är inte strikt monokromatiskt, analogt eller komplementärt, utan snarare en kombination av olika färger som fungerar harmoniskt tillsammans och där guldtonen sticker ut en aning.
 <div class="colors">
 <table>
 <tr>
