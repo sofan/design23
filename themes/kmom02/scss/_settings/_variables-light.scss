@@ -1,40 +1,54 @@
 @use 'fonts';
 
-$a: #026E81;
-$b: #00ABBD;
-$c: #09d;
-$d: #f93;
-$e: #A1C7E0;
-
+$a: #3C6975;
+$b: #A06A37;
+$c: #37a6a2;
+$d: #2F98B5;
+$e: #f99428;
+$light-grey: #eee;
+$medium-grey: #999;
+$dark-grey: #333;
+$almost-black: #111;
 
 
 $colors: (
 'bg': #fff,
-'background-footer-color': $a,
+'background-footer-color': $b,
+'footer-border-color': $b,
 'background-header-color': $a,
-'background-code-color': #eee,
-'font-color': #333,
+'background-code-color': $light-grey,
+'font-color': $dark-grey,
 'font-color-header': #fff,
 'font-color-footer': #fff,
-'h1-color': #333,
+'label-color': $almost-black,
 'main-link-color': $a,
 'hover-color': $d,
-'header-footer-hover-color': #00ABBD,
+'header-hover-color': $e,
+'footer-hover-color': $b,
 'hover-box': #fff,
-'report-box-color': $d,
-'report-link-color': #333,
 'table-bg-color': transparent,
-'table-header-color':  #f93,
-'table-alt-color':  #eee,
-'table-border-color': #f93,
+'table-header-color':  $e,
+'table-alt-color':  $light-grey,
+'table-border-color': $e,
+'hr-color': $medium-grey,
 
 box-colors: (
-    $a,
     $b,
+    $a,
     $c,
-    $d,
-    $e
+    $e,
+    $d
 ),
+box-font-colors:  (
+
+    #c5f3da,
+    #b3cda0,
+    #baf7fd,
+    #4F351D,
+    #b3d6b1,
+
+),
+
 'box-hover-lightness': 20%,
 'box-hover-font-color': #fff
 

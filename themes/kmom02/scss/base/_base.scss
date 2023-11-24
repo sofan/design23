@@ -12,7 +12,8 @@ $font-color: map.get(settings.$colors, 'font-color');
 $font-color-header: map.get(settings.$colors, 'font-color-header');
 $main-link-color: map.get(settings.$colors, 'main-link-color');
 $hover-color: map.get(settings.$colors, 'hover-color');
-$h1-color: map.get(settings.$colors, 'h1-color');
+$label-color: map.get(settings.$colors, 'label-color');
+$hr-color: map.get(settings.$colors, 'hr-color');
 
 // Fonts
 $label-font: map.get(settings.$fonts, 'label-font');
@@ -28,7 +29,7 @@ $border-light-grey: map.get(settings.$borders, 'border-light-grey');
     border: 0 none;
     margin: 0;
     padding: 0;
-    font-family: $paragraph-font, sans-serif;
+    font-family:$paragraph-font,  serif;
 }
 
 html, body {
@@ -43,11 +44,17 @@ p, td, th, li, dd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $h1-color;
+    color: $label-color;
     margin-bottom: 0.6em;
     font-weight: bold;
     font-family: $label-font;
     letter-spacing: 0.2rem;
+}
+
+hr {
+    padding: 1pt;
+    background-color: $hr-color;
+    margin: 2rem 0;
 }
 
 .header {
@@ -70,7 +77,7 @@ p {
 
 ol, ul {
     padding-left: 1.5em;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 
     ul {
         list-style-type: disclosure-closed;
@@ -95,6 +102,9 @@ body {
     }
 }
 
+img {
+    max-width: 100%;
+}
 
 .main {
     flex: 1 0 auto;
@@ -118,11 +128,24 @@ body {
     }
 }
 
+.colors {
+    table {
+        background-color: transparent;
+        border-spacing: 4px;
+        border-collapse: separate;
+    }
+
+    td {
+        border: 0;
+        height: 50px;
+    }
+}
+
 
 // If dark theme, set image filter
 @if $theme == 'dark' {
     img {
-        filter: brightness(.5) contrast(1.1);
+        filter: brightness(0.7) contrast(1);
     }
 }
 

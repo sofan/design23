@@ -7,6 +7,8 @@
 
 
 $box-colors: map.get(settings.$colors, 'box-colors');
+$box-font-colors: map.get(settings.$colors, 'box-font-colors');
+
 
 @mixin flex-container($justify: space-between, $align: center) {
     display: flex;
@@ -45,6 +47,7 @@ $box-colors: map.get(settings.$colors, 'box-colors');
 @mixin link-styling($index, $lighten) {
     a {
         background-color: list.nth($box-colors, $index);
+        color: list.nth($box-font-colors, $index);
 
         &:hover {
             background-color: color.scale(list.nth($box-colors, $index), $lightness: $lighten);

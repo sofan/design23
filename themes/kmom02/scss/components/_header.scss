@@ -24,6 +24,12 @@ $font-color: map.get(settings.$colors, 'font-color-header');
         @include mix.font-no-underline($font-color);
     }
 
+    a:hover {
+        color: map.get(settings.$colors, 'header-hover-color');
+    }
+
+
+
     img {
         width: 100px;
     }

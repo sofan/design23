@@ -1,32 +1,37 @@
 @use 'fonts';
 
 $a: #1E1E1E;
-$b: #303437;
+$b: #313730;
 $c: #121617;
 $d: #42341a;
 $e: #17272B;
-$f: #d3d0d0;
+$f: #ca8606;
 
+$almost-white: #d9d8d8;
+$light-grey: #d3d0d0;
+$medium-grey: #8e8a8a;
+$dark-grey: #333;
 
 $colors: (
 'bg': #282a2b,
-'background-footer-color': #1E1E1E,
-'background-header-color': #1E1E1E,
-'background-code-color': #303437,
-'font-color': #d3d0d0,
-'font-color-header': #d3d0d0,
-'font-color-footer': #d3d0d0,
-'h1-color': #d3d0d0,
-'main-link-color': #ca8606,
-'hover-color': #ca8606,
-'header-footer-hover-color': #ca8606,
+'background-footer-color': $a,
+'footer-border-color': $a,
+'background-header-color': $a,
+'background-code-color': $dark-grey,
+'font-color': $light-grey,
+'font-color-header': $light-grey,
+'font-color-footer': $light-grey,
+'label-color': $almost-white,
+'main-link-color': $light-grey,
+'hover-color': $f,
+'header-hover-color': $f,
+'footer-hover-color': $f,
 'hover-box': #fff,
-'report-box-color': #17272B,
-'report-link-color': #d3d0d0,
-'table-bg-color': #36393c,
-'table-header-color': #2c3e50,
-'table-alt-color':  #464748,
-'table-border-color': #182628,
+'table-bg-color': $dark-grey,
+'table-header-color': $e,
+'table-alt-color':  $dark-grey,
+'table-border-color': $e,
+'hr-color': $b,
 
 box-colors: (
     #312121,
@@ -34,6 +39,13 @@ box-colors: (
     $c,
     $d,
     $e
+),
+box-font-colors:  (
+    #866b73,
+    #a1af7a,
+    #8c8c83,
+    #a29378,
+    #72818e
 ),
 
 'box-hover-lightness': 5%,
