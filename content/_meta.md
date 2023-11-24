@@ -1,6 +1,15 @@
 ---
 Logo: image/logo.webp
 Tagline: Min rapportsida
+Theme:
+    - title: Swap theme
+      url: ?action=theme
+      icon: fas fa-moon
+      target: _self
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
+      target: _self
 Social:
     - title: Länk till github repo
       url: https://github.com/sofan/design23
@@ -13,14 +22,7 @@ Social:
       target: _blank
       #iconunicode: '🌿'
 
-    - title: Dark mode
-      url: ?action=theme
-      icon: fas fa-moon
-      target: _self
 
-    - title: Destroy Session
-      url: ?action=session_destroy
-      icon: fas fa-trash-alt
-      target: _self
+
 
 ---
