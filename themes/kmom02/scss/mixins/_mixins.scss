@@ -8,6 +8,7 @@
 
 $box-colors: map.get(settings.$colors, 'box-colors');
 $box-font-colors: map.get(settings.$colors, 'box-font-colors');
+$shadow-color: map.get(settings.$colors, 'shadow-color');
 
 
 @mixin flex-container($justify: space-between, $align: center) {
@@ -35,11 +36,11 @@ $box-font-colors: map.get(settings.$colors, 'box-font-colors');
     align-items: center;
 }
 
-@mixin box-border($width: 1px, $color: #333, $shadow-color: #333333e8, $blur: 3px) {
+@mixin box-border($color: #333) {
     border-radius: 10px;
     border-right: $color;
     border-bottom: $color;
-    box-shadow: 3px 3px $blur $shadow-color;
+    box-shadow: 3px 3px 3px $shadow-color;
 }
 
 

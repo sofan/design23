@@ -1,5 +1,5 @@
 ---
-Title: Technologies
+Title: Tech
 Description: This is my technology page.
 Template: technologies
 ---

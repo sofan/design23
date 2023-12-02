@@ -35,6 +35,7 @@ $border-light-grey: map.get(settings.$borders, 'border-light-grey');
 html, body {
     font-size: 100%;
     height: 100%;
+    max-width: 100%;
 }
 
 
@@ -143,11 +144,11 @@ img {
 
 
 // If dark theme, set image filter
-@if $theme == 'dark' {
+/* @if $theme == 'dark' {
     img {
         filter: brightness(0.7) contrast(1);
     }
-}
+} */
 
 @media (max-width: 500px) {
     .main {

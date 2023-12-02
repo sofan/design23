@@ -13,7 +13,7 @@ $font-color: map.get(settings.$colors, 'font-color-header');
     background-color: map.get(settings.$colors, 'background-header-color');
 
     .title, .logo {
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     h1 {
@@ -32,6 +32,8 @@ $font-color: map.get(settings.$colors, 'font-color-header');
 
     img {
         width: 100px;
+        min-width: 75px;
+        aspect-ratio: 1/1;
     }
 }
 
@@ -40,6 +42,19 @@ $font-color: map.get(settings.$colors, 'font-color-header');
 }
 
 .logotitle {
-    @include mix.flex-container();
+    @include mix.flex-container(space-between, flex-start);
+}
+
+
+@media (max-width: 500px) {
+    .header img{
+        width: 75px;
+    }
+}
+
+@media (max-width: 380px) {
+    .logotitle {
+        align-items: center;
+    }
 }
 

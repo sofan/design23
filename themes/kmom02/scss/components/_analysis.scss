@@ -1,0 +1,21 @@
+/* analysis.cscc */
+
+.analysis-load {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    img {
+        width: 30%;
+        min-width: 150px;
+    }
+}
+
+
+.load{
+    padding-bottom: 82.25%;
+}

@@ -15,6 +15,7 @@ $theme: 'light' !default;
         @include mix.flex-container(flex-end, center);
         padding: 1em 0;
         list-style: none;
+        flex-wrap: wrap;
     }
 
     ul li {

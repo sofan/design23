@@ -32,6 +32,7 @@ $colors: (
 'table-alt-color':  $dark-grey,
 'table-border-color': $e,
 'hr-color': $b,
+'shadow-color': #000,
 
 box-colors: (
     #312121,
@@ -68,5 +69,6 @@ $borders: (
 'border-dark-grey': 1px solid #333,
 'border-light-grey': 1px solid #ccc,
 'blockquote-border-left': 1px solid #ccc,
-'code-border': 1px solid #463e3e
+'code-border': 1px solid #463e3e,
+'border-gallery': 1px solid #fff
 );

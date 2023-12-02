@@ -1,0 +1,47 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+     <div class="main" role="main">
+     <h1>{{ meta.title }}</h1>
+
+
+        {% set dir = meta.imageDirectory %}
+
+        <div class="container gallery">
+            {% for image in meta.images %}
+
+                {% set altText = image.alt ? image.alt : image.file | split('.')[0] %}
+
+                <div class="gallery-item">
+                    {# <a href="{{ base_url }}/gallery/image?file={{meta.imageDirectory}}/{{ image.file }}" target="_blank"> #}
+                    <a href="{{ base_url }}/image/{{dir}}/{{ image.file }}" target="_blank">
+                        <picture>
+                            <source
+                                media="(min-width: 600px)"
+                                srcset="{{ base_url }}/image/{{dir}}/{{ image.file }}?h=250&w=250&q=75&crop-to-fit">
+                            <img src="{{ base_url }}/image/{{dir}}/{{ image.file }}&w=450&h=450&crop-to-fit&q=75" alt="{{ altText }}">
+                        </picture>
+                        <p class="image-text">{{altText}}</p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <br><br>
+        <h2>En bra video kommer här:</h2>
+        <div class="embed-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jH3wmjaoADY?si=_Vtm8KduqyQqc-fr"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
