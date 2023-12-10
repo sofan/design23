@@ -14,6 +14,7 @@
 
                 {% set altText = image.alt ? image.alt : image.file | split('.')[0] %}
 
+
                 <div class="gallery-item">
                     {# <a href="{{ base_url }}/gallery/image?file={{meta.imageDirectory}}/{{ image.file }}" target="_blank"> #}
                     <a href="{{ base_url }}/image/{{dir}}/{{ image.file }}" target="_blank">
@@ -21,7 +22,7 @@
                             <source
                                 media="(min-width: 600px)"
                                 srcset="{{ base_url }}/image/{{dir}}/{{ image.file }}?h=250&w=250&q=75&crop-to-fit">
-                            <img src="{{ base_url }}/image/{{dir}}/{{ image.file }}&w=450&h=450&crop-to-fit&q=75" alt="{{ altText }}">
+                            <img src="{{ base_url }}/image/{{dir}}/{{ image.file }}&w=450&h=450&crop-to-fit&q=75" alt="{{ 'image ' ~  altText }}">
                         </picture>
                         <p class="image-text">{{altText}}</p>
                     </a>

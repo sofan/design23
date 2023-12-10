@@ -10,14 +10,17 @@
 
     @include mix.fixed-padding-and-no-growth;
     @include mix.flex-container;
+    flex-direction: column;
     border-top: 1px solid map.get(settings.$colors, 'footer-border-color');
     background-color:  map.get(settings.$colors, 'background-footer-color');
     color: map.get(settings.$colors, 'font-color-footer');
-    padding: 0.5rem 1rem;
+    padding: 1.5rem;
+
 
     a {
         @include mix.font-no-underline(map.get(settings.$colors, 'font-color-footer'));
         padding: 0.5rem;
+        transition: color 0.3s ease;
     }
 
     a:hover {

@@ -38,9 +38,8 @@ $shadow-color: map.get(settings.$colors, 'shadow-color');
 
 @mixin box-border($color: #333) {
     border-radius: 10px;
-    border-right: $color;
-    border-bottom: $color;
-    box-shadow: 3px 3px 3px $shadow-color;
+    border: 1px solid rgb(111 94 94 / 81%);
+    box-shadow: 0 0 10px 2px $shadow-color;
 }
 
 
@@ -49,6 +48,7 @@ $shadow-color: map.get(settings.$colors, 'shadow-color');
     a {
         background-color: list.nth($box-colors, $index);
         color: list.nth($box-font-colors, $index);
+        transition: background-color 0.3s ease;
 
         &:hover {
             background-color: color.scale(list.nth($box-colors, $index), $lightness: $lighten);

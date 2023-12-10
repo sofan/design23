@@ -2,7 +2,7 @@
 
 $a: #3C6975;
 $b: #A06A37;
-$c: #37a6a2;
+$c: #267f7c;
 $d: #2F98B5;
 $e: #f99428;
 $light-grey: #eee;
@@ -12,7 +12,7 @@ $almost-black: #111;
 
 
 $colors: (
-'bg': #fff,
+'bg': #E0E9E7,
 'background-footer-color': $b,
 'footer-border-color': $b,
 'background-header-color': $a,
@@ -20,18 +20,19 @@ $colors: (
 'font-color': $dark-grey,
 'font-color-header': #fff,
 'font-color-footer': #fff,
-'label-color': $almost-black,
+'label-color': $dark-grey,
 'main-link-color': $a,
 'hover-color': $d,
 'header-hover-color': $e,
-'footer-hover-color': $b,
+'footer-hover-color': $e,
 'hover-box': #fff,
 'table-bg-color': transparent,
 'table-header-color':  $e,
 'table-alt-color':  $light-grey,
 'table-border-color': $e,
 'hr-color': $medium-grey,
-'shadow-color': #333333e8,
+'shadow-color': rgba(9, 72, 79, 0.562),
+'header-gradient': linear-gradient(120deg, #385a63de, rgb(181 112 16 / 50%), rgb(0 121 123 / 68%)),
 
 box-colors: (
     $b,
@@ -43,10 +44,10 @@ box-colors: (
 box-font-colors:  (
 
     #c5f3da,
-    #b3cda0,
-    #baf7fd,
+    #e5ffe4,
+    #fff,
     #4F351D,
-    #b3d6b1,
+    #fff,
 
 ),
 

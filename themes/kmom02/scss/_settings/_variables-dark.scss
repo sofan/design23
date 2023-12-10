@@ -32,7 +32,8 @@ $colors: (
 'table-alt-color':  $dark-grey,
 'table-border-color': $e,
 'hr-color': $b,
-'shadow-color': #000,
+'shadow-color': rgba(10, 32, 35, 0.56),
+'header-gradient': linear-gradient(to right, rgb(16 2 2 / 70%), rgb(0 0 0 / 67%), rgb(0 0 0 / 50%), rgb(67 45 6 / 50%)),
 
 box-colors: (
     #312121,

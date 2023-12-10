@@ -5,30 +5,42 @@
 @use '../mixins/' as mix;
 
 $font-color: map.get(settings.$colors, 'font-color-header');
+$header-gradient: map.get(settings.$colors, 'header-gradient');
+
+.outerheader {
+    background-image: url("../../../assets/img/bg_header_sepia.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .header {
 
     @include mix.fixed-padding-and-no-growth;
     @include mix.flex-container(space-between, normal);
-    background-color: map.get(settings.$colors, 'background-header-color');
+    background-image: $header-gradient;
+    /* background-color: map.get(settings.$colors, 'background-header-color'); */
+
 
     .title, .logo {
         padding: 0.5rem;
     }
 
     h1 {
-        margin-top: 0;
+        letter-spacing: 0.4rem;
+        margin: 0;
     }
 
     a {
         @include mix.font-no-underline($font-color);
+        font-size: 1.2rem;
+        text-transform: lowercase;
+        font-weight: bold;
+        transition: color 0.3s ease;
     }
 
     a:hover {
         color: map.get(settings.$colors, 'header-hover-color');
     }
-
-
 
     img {
         width: 100px;
@@ -45,6 +57,11 @@ $font-color: map.get(settings.$colors, 'font-color-header');
     @include mix.flex-container(space-between, flex-start);
 }
 
+@media (max-width: 750px) {
+    .outerheader {
+        background-image: url("../../../assets/img/bg_header_sepia_small.webp");
+    }
+}
 
 @media (max-width: 500px) {
     .header img{

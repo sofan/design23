@@ -1,4 +1,5 @@
-<div class="header" role="banner">
+<div class="outerheader" role="banner">
+    <div class="header">
     <div class="site-header">
         {% if pages["_meta"].meta.logo %}
         <div class="logotitle">
@@ -35,17 +36,17 @@
                     </li>
                 {% endfor %}
 
-                {% for theme in pages["_meta"].meta.Theme %}
+                {# {% for theme in pages["_meta"].meta.Theme %}
                     <li>
                         <a target="{{ theme.target }}" href="{{ theme.url }}" title="{{ theme.title }}" role="button">
                             <i class="{{ theme.icon }}" aria-hidden="true"></i>
                             <span class="sr-only">{{ theme.title }}</span>
                         </a>
                     </li>
-                {% endfor %}
+                {% endfor %} #}
 
             </ul>
         </div>
     </div>
-
+    </div>
 </div>

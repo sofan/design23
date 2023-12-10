@@ -1,6 +1,6 @@
 ---
-Logo: image/logo.webp
-Tagline: Min rapportsida
+Logo: image/me.webp
+Tagline: My portfolio
 Theme:
     - title: Swap theme
       url: ?action=theme
@@ -21,6 +21,16 @@ Social:
       icon: fab fa-envira
       target: _blank
       #iconunicode: '🌿'
+
+    - title: Swap theme
+      url: ?action=theme
+      icon: fas fa-moon
+      target: _self
+
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
+      target: _self
 
 
 

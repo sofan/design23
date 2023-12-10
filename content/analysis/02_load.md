@@ -37,7 +37,7 @@ Resultat
 I tabellen nedan listas resultaten för de olika sidorna samt ett snittbetyg för varje webbplats. Därefter följer en kort analys av respektive sida.
 
 <div class="embed-container load">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSivhktTQCMMIQLBMWS2vyEJlFLMXeQ3LQ-1Cv_hxXksX2s0ZdhEdjw0vsSTabLGGM6MQbJO_YMZeFG/pubhtml?gid=634347005&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe title="myvideo" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSivhktTQCMMIQLBMWS2vyEJlFLMXeQ3LQ-1Cv_hxXksX2s0ZdhEdjw0vsSTabLGGM6MQbJO_YMZeFG/pubhtml?gid=634347005&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </div>
 
 ---
